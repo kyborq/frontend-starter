@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <div className={styles.Header}>
       <div className={styles.Container}>
-        <Logo title="Афишер" city="Йошкар-Ола" />
+        <Logo title="Афи́шер" city="Йошкар-Ола" />
 
         <div style={{ display: "flex" }}>
           <NavButton icon="home" label="Главная" />

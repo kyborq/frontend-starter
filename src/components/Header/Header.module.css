@@ -3,6 +3,7 @@
   border-radius: 0 0 24px 24px;
   display: flex;
   box-shadow: 0 0px 24px rgb(0 0 0 / 2%);
+  margin-bottom: 32px;
 }
 
 .Container {
