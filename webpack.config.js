@@ -5,7 +5,7 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 const CSS_REGEX = /\.css$/i;
 const CSS_MODULE_REGEX = /\.module\.css$/;
-const ASSET_REGEX = /\.(png|svg|jpg|jpeg|gif)$/i;
+const ASSET_REGEX = /\.(png|jpg|jpeg|gif)$/i;
 const TSX_REGEX = /\.ts(x?)$/;
 
 module.exports = {
@@ -43,6 +43,11 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ["@svgr/webpack"],
       },
       {
         test: ASSET_REGEX,
