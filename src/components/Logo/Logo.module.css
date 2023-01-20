@@ -1,0 +1,16 @@
+.Logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.Title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.City {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 4px;
+}
